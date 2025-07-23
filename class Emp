@@ -1,0 +1,48 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Class_Demo1
+{
+    
+    class Emp
+    {
+        //instance variables
+        int eid , basic , da ,ta,hra,gross;
+        string name;
+
+        public void Get_Data()
+        {
+            Console.WriteLine("Enter Name Of Employee: ");
+            name = Console.ReadLine();
+            Console.WriteLine("Enter Empoyee ID  : ");
+            eid = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter Basic Salary : ");
+            basic = int.Parse(Console.ReadLine());
+        }
+
+        public void Sal_Cal()
+        {
+            da = (10 * basic) / 100;
+            ta = (8 * basic) / 100;
+            hra = (12 * basic) / 100;
+            gross = basic + da + ta + hra;
+        }
+
+        public void Disp_Data()
+        {
+            Console.WriteLine("------EMPLOYEE DATA--------");
+            Console.WriteLine("Name : " + name);
+            Console.WriteLine("ID : " + eid);
+            Console.WriteLine("Basic Salary : " + basic);
+            Console.WriteLine("DA  : " + da);
+            Console.WriteLine("TA  : " + ta);
+            Console.WriteLine("HRA  : " + hra);
+            Console.WriteLine("GROSS Salary  : " + gross);
+            Console.WriteLine("--------------------------");
+
+        }
+
+    }
