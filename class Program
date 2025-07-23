@@ -1,0 +1,19 @@
+class Program
+    {
+        static void Main(string[] args)
+        {
+            Emp Aobj = new Emp();
+            Aobj.Get_Data();
+            Aobj.Sal_Cal();
+            Aobj.Disp_Data();
+
+            Emp Sobj = new Emp();
+            Sobj.Get_Data();
+            Sobj.Sal_Cal();
+            Sobj.Disp_Data();
+         
+           
+
+            Console.ReadLine();
+        }
+    }
